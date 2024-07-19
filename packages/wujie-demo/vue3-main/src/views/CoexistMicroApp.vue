@@ -5,7 +5,7 @@
       type="success"
     />
     <a-row :gutter="20">
-      <a-col :span="12">
+      <!-- <a-col :span="12">
         <a-button
           v-if="showVue2App"
           type="primary"
@@ -24,7 +24,7 @@
           :url="vue2App.url"
           :afterMount="afterMount"
         />
-      </a-col>
+      </a-col> -->
       <a-col :span="12">
         <a-button
           v-if="showReactApp"

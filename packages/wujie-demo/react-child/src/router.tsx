@@ -12,7 +12,7 @@ const basename = window.__POWERED_BY_WUJIE__ ? '/reactApp' : '/'
 
 const routes: RouteObject[] = [
   {
-    path: '/',
+    path: basename,
     element: <Outlet />,
     children: [
       { index: true, element: <CommunicationTest /> },
@@ -40,8 +40,7 @@ const routes: RouteObject[] = [
   },
 ]
 
-const router = createHashRouter(routes, {
-  basename
-})
+// hashrouter是没有basename的，我们得直接在上面path里，根路径配置为我们的basename
+const router = createHashRouter(routes)
 
 export default router

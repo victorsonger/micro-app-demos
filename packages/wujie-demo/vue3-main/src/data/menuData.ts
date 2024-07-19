@@ -29,24 +29,24 @@ export const menuList: Menu[] = [
       }
     ]
   },
-  {
-    key: 2,
-    name: 'Vue2子应用',
-    path: 'vue2App',
-    component: 'Layout.vue',
-    children: [
-      {
-        key: 21,
-        path: 'communication-test',
-        name: 'Vue2通信测试'
-      },
-      {
-        key: 22,
-        path: 'navigate-view',
-        name: '子应用跳转测试'
-      }
-    ]
-  },
+  // {
+  //   key: 2,
+  //   name: 'Vue2子应用',
+  //   path: 'vue2App',
+  //   component: 'Layout.vue',
+  //   children: [
+  //     {
+  //       key: 21,
+  //       path: 'communication-test',
+  //       name: 'Vue2通信测试'
+  //     },
+  //     {
+  //       key: 22,
+  //       path: 'navigate-view',
+  //       name: '子应用跳转测试'
+  //     }
+  //   ]
+  // },
   {
     key: 3,
     name: 'React18子应用',

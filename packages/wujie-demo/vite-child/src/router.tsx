@@ -10,7 +10,7 @@ const basename = window.__POWERED_BY_WUJIE__ ? '/viteApp' : '/'
 
 const routes: RouteObject[] = [
   {
-    path: '/',
+    path: basename,
     element: <Outlet />,
     children: [
       { index: true, element: <CommunicationTest /> },
@@ -34,8 +34,6 @@ const routes: RouteObject[] = [
   }
 ]
 
-const router = createHashRouter(routes, {
-  basename,
-})
+const router = createHashRouter(routes)
 
 export default router
